@@ -14,7 +14,7 @@ h1 {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 0.7;
+    z-index: 1;
     opacity: 0.8;
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ h2 {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 0.7;
+    z-index: 2;
     margin: 0;
     padding: 0;
 }
@@ -50,7 +50,7 @@ p.intro {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    z-index: 1;
+    z-index: 3;
 }
 
 .footer-heading {
@@ -115,6 +115,7 @@ p.intro {
     h2 {
         font-size: 60px;
         top: 20%;
+        margin: revert;
     }
 
     p.intro {
@@ -127,7 +128,7 @@ p.intro {
         align-items: flex-start;
         right: auto;
         left: 10px;
-        bottom: auto;
+        bottom: 20px;
         top: auto;
     }
 
