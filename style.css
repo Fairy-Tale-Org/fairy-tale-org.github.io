@@ -14,7 +14,7 @@ h1 {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 0.7;
     opacity: 0.8;
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ h2 {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 0.7;
     margin: 0;
     padding: 0;
 }
@@ -41,11 +41,16 @@ p.intro {
 }
 
 .footer {
+    width: 95%;
     position: fixed;
     bottom: 10px;
     right: 10px;
     font-size: 24px;
     opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 1;
 }
 
 .footer-heading {
@@ -72,4 +77,66 @@ p.intro {
 
 .footer-link:hover {
     opacity: 1;
+}
+
+.footer-links {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    opacity: 0.7;
+    margin-right: 10px;
+}
+
+.footer-links a:last-child {
+    margin-right: 0;
+}
+
+.projects {
+    align-self: flex-end;
+}
+
+.projects ul {
+    text-align: right;
+}
+
+/* Custom Styles for Mobile Devices */
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 120px;
+        top: 10%;
+    }
+
+    h2 {
+        font-size: 60px;
+        top: 20%;
+    }
+
+    p.intro {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        right: auto;
+        left: 10px;
+        bottom: auto;
+        top: auto;
+    }
+
+    .footer-links {
+        margin-top: 20px;
+    }
+
+    .footer-links a {
+        display: block;
+        margin-bottom: 10px;
+    }
 }
